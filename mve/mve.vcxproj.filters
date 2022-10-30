@@ -1,0 +1,531 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\libs">
+      <UniqueIdentifier>{eeb3f71b-ef99-4a14-8e2e-084d1ad15b70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\libs\dmrecon">
+      <UniqueIdentifier>{14e0338a-34b9-466e-b135-9ec5dfe30bba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\libs\fssr">
+      <UniqueIdentifier>{ff93bfbf-d074-433a-82c1-1f961f6be7dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\libs\math">
+      <UniqueIdentifier>{77450d8c-d434-4424-b758-f32b647f13c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\libs\mve">
+      <UniqueIdentifier>{fd442010-ef3a-4f32-9b2f-62b4e23ea82d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\libs\ogl">
+      <UniqueIdentifier>{8050701a-c511-4af7-a3a1-3216c637d373}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\libs\sfm">
+      <UniqueIdentifier>{f2062f83-b7e4-40f7-a6dd-56b6bb659fdb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\libs\smvsrecon">
+      <UniqueIdentifier>{d2207838-d31b-4591-b69d-fed4b6237ead}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\libs\util">
+      <UniqueIdentifier>{b46592cb-4a1c-449c-819a-b0d5c832cc99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\libs">
+      <UniqueIdentifier>{fec4b8ae-893d-4aad-92dd-943b843901a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\libs\mve">
+      <UniqueIdentifier>{ede3dc7b-b0ec-42c6-a661-9ac5ec3c13aa}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\libs\dmrecon\dmrecon.cc">
+      <Filter>Source Files\libs\dmrecon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\dmrecon\global_view_selection.cc">
+      <Filter>Source Files\libs\dmrecon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\dmrecon\image_pyramid.cc">
+      <Filter>Source Files\libs\dmrecon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\dmrecon\local_view_selection.cc">
+      <Filter>Source Files\libs\dmrecon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\dmrecon\mvs_tools.cc">
+      <Filter>Source Files\libs\dmrecon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\dmrecon\patch_optimization.cc">
+      <Filter>Source Files\libs\dmrecon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\dmrecon\patch_sampler.cc">
+      <Filter>Source Files\libs\dmrecon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\dmrecon\single_view.cc">
+      <Filter>Source Files\libs\dmrecon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\fssr\basis_function.cc">
+      <Filter>Source Files\libs\fssr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\fssr\hermite.cc">
+      <Filter>Source Files\libs\fssr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\fssr\iso_octree.cc">
+      <Filter>Source Files\libs\fssr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\fssr\iso_surface.cc">
+      <Filter>Source Files\libs\fssr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\fssr\mesh_clean.cc">
+      <Filter>Source Files\libs\fssr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\fssr\octree.cc">
+      <Filter>Source Files\libs\fssr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\fssr\sample_io.cc">
+      <Filter>Source Files\libs\fssr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\fssr\triangulation.cc">
+      <Filter>Source Files\libs\fssr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\fssr\voxel.cc">
+      <Filter>Source Files\libs\fssr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\mve\bundle.cc">
+      <Filter>Source Files\libs\mve</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\mve\bundle_io.cc">
+      <Filter>Source Files\libs\mve</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\mve\camera.cc">
+      <Filter>Source Files\libs\mve</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\mve\depthmap.cc">
+      <Filter>Source Files\libs\mve</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\mve\image_exif.cc">
+      <Filter>Source Files\libs\mve</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\mve\image_io.cc">
+      <Filter>Source Files\libs\mve</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\mve\image_tools.cc">
+      <Filter>Source Files\libs\mve</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\mve\marching.cc">
+      <Filter>Source Files\libs\mve</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\mve\mesh.cc">
+      <Filter>Source Files\libs\mve</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\mve\mesh_info.cc">
+      <Filter>Source Files\libs\mve</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\mve\mesh_io.cc">
+      <Filter>Source Files\libs\mve</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\mve\mesh_io_npts.cc">
+      <Filter>Source Files\libs\mve</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\mve\mesh_io_obj.cc">
+      <Filter>Source Files\libs\mve</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\mve\mesh_io_off.cc">
+      <Filter>Source Files\libs\mve</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\mve\mesh_io_pbrt.cc">
+      <Filter>Source Files\libs\mve</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\mve\mesh_io_ply.cc">
+      <Filter>Source Files\libs\mve</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\mve\mesh_io_smf.cc">
+      <Filter>Source Files\libs\mve</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\mve\mesh_tools.cc">
+      <Filter>Source Files\libs\mve</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\mve\scene.cc">
+      <Filter>Source Files\libs\mve</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\mve\view.cc">
+      <Filter>Source Files\libs\mve</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\mve\volume.cc">
+      <Filter>Source Files\libs\mve</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\util\arguments.cc">
+      <Filter>Source Files\libs\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\util\file_system.cc">
+      <Filter>Source Files\libs\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\util\ini_parser.cc">
+      <Filter>Source Files\libs\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\util\system.cc">
+      <Filter>Source Files\libs\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\sfm\ba_linear_solver.cc">
+      <Filter>Source Files\libs\sfm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\sfm\bundle_adjustment.cc">
+      <Filter>Source Files\libs\sfm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\sfm\bundler_common.cc">
+      <Filter>Source Files\libs\sfm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\sfm\bundler_features.cc">
+      <Filter>Source Files\libs\sfm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\sfm\bundler_incremental.cc">
+      <Filter>Source Files\libs\sfm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\sfm\bundler_init_pair.cc">
+      <Filter>Source Files\libs\sfm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\sfm\bundler_intrinsics.cc">
+      <Filter>Source Files\libs\sfm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\sfm\bundler_matching.cc">
+      <Filter>Source Files\libs\sfm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\sfm\bundler_tracks.cc">
+      <Filter>Source Files\libs\sfm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\sfm\camera_database.cc">
+      <Filter>Source Files\libs\sfm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\sfm\cascade_hashing.cc">
+      <Filter>Source Files\libs\sfm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\sfm\exhaustive_matching.cc">
+      <Filter>Source Files\libs\sfm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\sfm\extract_focal_length.cc">
+      <Filter>Source Files\libs\sfm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\sfm\feature_set.cc">
+      <Filter>Source Files\libs\sfm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\sfm\fundamental.cc">
+      <Filter>Source Files\libs\sfm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\sfm\homography.cc">
+      <Filter>Source Files\libs\sfm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\sfm\matching.cc">
+      <Filter>Source Files\libs\sfm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\sfm\nearest_neighbor.cc">
+      <Filter>Source Files\libs\sfm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\sfm\pose_p3p.cc">
+      <Filter>Source Files\libs\sfm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\sfm\ransac.cc">
+      <Filter>Source Files\libs\sfm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\sfm\ransac_fundamental.cc">
+      <Filter>Source Files\libs\sfm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\sfm\ransac_homography.cc">
+      <Filter>Source Files\libs\sfm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\sfm\ransac_pose_p3p.cc">
+      <Filter>Source Files\libs\sfm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\sfm\sift.cc">
+      <Filter>Source Files\libs\sfm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\sfm\surf.cc">
+      <Filter>Source Files\libs\sfm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\sfm\triangulate.cc">
+      <Filter>Source Files\libs\sfm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\sfm\visualizer.cc">
+      <Filter>Source Files\libs\sfm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\ogl\camera_2d.cc">
+      <Filter>Source Files\libs\ogl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\ogl\camera_trackball.cc">
+      <Filter>Source Files\libs\ogl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\ogl\events.cc">
+      <Filter>Source Files\libs\ogl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\ogl\mesh_renderer.cc">
+      <Filter>Source Files\libs\ogl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\ogl\render_tools.cc">
+      <Filter>Source Files\libs\ogl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\ogl\shader_program.cc">
+      <Filter>Source Files\libs\ogl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\ogl\texture.cc">
+      <Filter>Source Files\libs\ogl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\ogl\vertex_array.cc">
+      <Filter>Source Files\libs\ogl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\ogl\vertex_buffer.cc">
+      <Filter>Source Files\libs\ogl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\smvsrecon\bicubic_patch.cc">
+      <Filter>Source Files\libs\smvsrecon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\smvsrecon\correspondence.cc">
+      <Filter>Source Files\libs\smvsrecon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\smvsrecon\depth_triangulator.cc">
+      <Filter>Source Files\libs\smvsrecon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\smvsrecon\sse_vector.cc">
+      <Filter>Source Files\libs\smvsrecon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\smvsrecon\delaunay_2d.cc">
+      <Filter>Source Files\libs\smvsrecon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\smvsrecon\surface.cc">
+      <Filter>Source Files\libs\smvsrecon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\smvsrecon\view_selection.cc">
+      <Filter>Source Files\libs\smvsrecon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\smvsrecon\surface_patch.cc">
+      <Filter>Source Files\libs\smvsrecon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\smvsrecon\surface_derivative.cc">
+      <Filter>Source Files\libs\smvsrecon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\smvsrecon\stereo_view.cc">
+      <Filter>Source Files\libs\smvsrecon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\smvsrecon\sgm_stereo.cc">
+      <Filter>Source Files\libs\smvsrecon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\smvsrecon\mesh_simplifier.cc">
+      <Filter>Source Files\libs\smvsrecon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\smvsrecon\mesh_generator.cc">
+      <Filter>Source Files\libs\smvsrecon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\smvsrecon\light_optimizer.cc">
+      <Filter>Source Files\libs\smvsrecon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\smvsrecon\global_lighting.cc">
+      <Filter>Source Files\libs\smvsrecon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\smvsrecon\gauss_newton_step.cc">
+      <Filter>Source Files\libs\smvsrecon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libs\smvsrecon\depth_optimizer.cc">
+      <Filter>Source Files\libs\smvsrecon</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\libs\mve\bundle_io.h">
+      <Filter>Header Files\libs\mve</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\libs\mve\camera.h">
+      <Filter>Header Files\libs\mve</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\libs\mve\defines.h">
+      <Filter>Header Files\libs\mve</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\libs\mve\depthmap.h">
+      <Filter>Header Files\libs\mve</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\libs\mve\image.h">
+      <Filter>Header Files\libs\mve</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\libs\mve\image_base.h">
+      <Filter>Header Files\libs\mve</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\libs\mve\image_color.h">
+      <Filter>Header Files\libs\mve</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\libs\mve\image_drawing.h">
+      <Filter>Header Files\libs\mve</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\libs\mve\image_exif.h">
+      <Filter>Header Files\libs\mve</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\libs\mve\image_io.h">
+      <Filter>Header Files\libs\mve</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\libs\mve\image_tools.h">
+      <Filter>Header Files\libs\mve</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\libs\mve\marching_cubes.h">
+      <Filter>Header Files\libs\mve</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\libs\mve\marching_tets.h">
+      <Filter>Header Files\libs\mve</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\libs\mve\mesh.h">
+      <Filter>Header Files\libs\mve</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\libs\mve\mesh_info.h">
+      <Filter>Header Files\libs\mve</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\libs\mve\mesh_io.h">
+      <Filter>Header Files\libs\mve</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\libs\mve\mesh_io_npts.h">
+      <Filter>Header Files\libs\mve</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\libs\mve\mesh_io_obj.h">
+      <Filter>Header Files\libs\mve</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\libs\mve\mesh_io_off.h">
+      <Filter>Header Files\libs\mve</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\libs\mve\mesh_io_pbrt.h">
+      <Filter>Header Files\libs\mve</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\libs\mve\mesh_io_ply.h">
+      <Filter>Header Files\libs\mve</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\libs\mve\mesh_io_smf.h">
+      <Filter>Header Files\libs\mve</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\libs\mve\mesh_tools.h">
+      <Filter>Header Files\libs\mve</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\libs\mve\scene.h">
+      <Filter>Header Files\libs\mve</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\libs\mve\view.h">
+      <Filter>Header Files\libs\mve</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\libs\mve\volume.h">
+      <Filter>Header Files\libs\mve</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\libs\smvsrecon\bicubic_patch.h">
+      <Filter>Source Files\libs\smvsrecon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\libs\smvsrecon\block_sparse_matrix.h">
+      <Filter>Source Files\libs\smvsrecon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\libs\smvsrecon\conjugate_gradient.h">
+      <Filter>Source Files\libs\smvsrecon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\libs\smvsrecon\correspondence.h">
+      <Filter>Source Files\libs\smvsrecon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\libs\smvsrecon\defines.h">
+      <Filter>Source Files\libs\smvsrecon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\libs\smvsrecon\delaunay_2d.h">
+      <Filter>Source Files\libs\smvsrecon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\libs\smvsrecon\depth_optimizer.h">
+      <Filter>Source Files\libs\smvsrecon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\libs\smvsrecon\depth_triangulator.h">
+      <Filter>Source Files\libs\smvsrecon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\libs\smvsrecon\gauss_newton_step.h">
+      <Filter>Source Files\libs\smvsrecon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\libs\smvsrecon\global_lighting.h">
+      <Filter>Source Files\libs\smvsrecon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\libs\smvsrecon\ldl_decomposition.h">
+      <Filter>Source Files\libs\smvsrecon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\libs\smvsrecon\light_optimizer.h">
+      <Filter>Source Files\libs\smvsrecon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\libs\smvsrecon\mesh_generator.h">
+      <Filter>Source Files\libs\smvsrecon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\libs\smvsrecon\mesh_simplifier.h">
+      <Filter>Source Files\libs\smvsrecon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\libs\smvsrecon\quad_edge.h">
+      <Filter>Source Files\libs\smvsrecon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\libs\smvsrecon\sgm_stereo.h">
+      <Filter>Source Files\libs\smvsrecon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\libs\smvsrecon\spherical_harmonics.h">
+      <Filter>Source Files\libs\smvsrecon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\libs\smvsrecon\sse_vector.h">
+      <Filter>Source Files\libs\smvsrecon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\libs\smvsrecon\stereo_view.h">
+      <Filter>Source Files\libs\smvsrecon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\libs\smvsrecon\surface.h">
+      <Filter>Source Files\libs\smvsrecon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\libs\smvsrecon\surface_derivative.h">
+      <Filter>Source Files\libs\smvsrecon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\libs\smvsrecon\surface_patch.h">
+      <Filter>Source Files\libs\smvsrecon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\libs\smvsrecon\thread_pool.h">
+      <Filter>Source Files\libs\smvsrecon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\libs\smvsrecon\view_selection.h">
+      <Filter>Source Files\libs\smvsrecon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\libs\util\aligned_allocator.h">
+      <Filter>Source Files\libs\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\libs\util\aligned_memory.h">
+      <Filter>Source Files\libs\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\libs\util\arguments.h">
+      <Filter>Source Files\libs\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\libs\util\defines.h">
+      <Filter>Source Files\libs\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\libs\util\endian.h">
+      <Filter>Source Files\libs\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\libs\util\exception.h">
+      <Filter>Source Files\libs\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\libs\util\file_system.h">
+      <Filter>Source Files\libs\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\libs\util\frame_timer.h">
+      <Filter>Source Files\libs\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\libs\util\ini_parser.h">
+      <Filter>Source Files\libs\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\libs\util\logging.h">
+      <Filter>Source Files\libs\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\libs\util\string.h">
+      <Filter>Source Files\libs\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\libs\util\system.h">
+      <Filter>Source Files\libs\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\libs\util\timer.h">
+      <Filter>Source Files\libs\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\libs\util\tokenizer.h">
+      <Filter>Source Files\libs\util</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

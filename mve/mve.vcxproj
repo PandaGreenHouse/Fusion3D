@@ -1,0 +1,317 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4767F2C8-7BB1-433E-ADB9-6AF996E0BC74}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>mve</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <TargetName>$(ProjectName)d</TargetName>
+    <OutDir>../lib/</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>../lib/</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_LIB;NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalIncludeDirectories>../src/libs;../3rdparty/include</AdditionalIncludeDirectories>
+      <OpenMPSupport>false</OpenMPSupport>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_LIB;NOMINMAX;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>../src/libs;../3rdparty/include</AdditionalIncludeDirectories>
+      <OpenMPSupport>false</OpenMPSupport>
+      <BrowseInformation>true</BrowseInformation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\libs\dmrecon\dmrecon.cc" />
+    <ClCompile Include="..\src\libs\dmrecon\global_view_selection.cc" />
+    <ClCompile Include="..\src\libs\dmrecon\image_pyramid.cc" />
+    <ClCompile Include="..\src\libs\dmrecon\local_view_selection.cc" />
+    <ClCompile Include="..\src\libs\dmrecon\mvs_tools.cc" />
+    <ClCompile Include="..\src\libs\dmrecon\patch_optimization.cc" />
+    <ClCompile Include="..\src\libs\dmrecon\patch_sampler.cc" />
+    <ClCompile Include="..\src\libs\dmrecon\single_view.cc" />
+    <ClCompile Include="..\src\libs\fssr\basis_function.cc" />
+    <ClCompile Include="..\src\libs\fssr\hermite.cc" />
+    <ClCompile Include="..\src\libs\fssr\iso_octree.cc" />
+    <ClCompile Include="..\src\libs\fssr\iso_surface.cc" />
+    <ClCompile Include="..\src\libs\fssr\mesh_clean.cc" />
+    <ClCompile Include="..\src\libs\fssr\octree.cc" />
+    <ClCompile Include="..\src\libs\fssr\sample_io.cc" />
+    <ClCompile Include="..\src\libs\fssr\triangulation.cc" />
+    <ClCompile Include="..\src\libs\fssr\voxel.cc" />
+    <ClCompile Include="..\src\libs\mve\bundle.cc" />
+    <ClCompile Include="..\src\libs\mve\bundle_io.cc" />
+    <ClCompile Include="..\src\libs\mve\camera.cc" />
+    <ClCompile Include="..\src\libs\mve\depthmap.cc" />
+    <ClCompile Include="..\src\libs\mve\image_exif.cc" />
+    <ClCompile Include="..\src\libs\mve\image_io.cc" />
+    <ClCompile Include="..\src\libs\mve\image_tools.cc" />
+    <ClCompile Include="..\src\libs\mve\marching.cc" />
+    <ClCompile Include="..\src\libs\mve\mesh.cc" />
+    <ClCompile Include="..\src\libs\mve\mesh_info.cc" />
+    <ClCompile Include="..\src\libs\mve\mesh_io.cc" />
+    <ClCompile Include="..\src\libs\mve\mesh_io_npts.cc" />
+    <ClCompile Include="..\src\libs\mve\mesh_io_obj.cc" />
+    <ClCompile Include="..\src\libs\mve\mesh_io_off.cc" />
+    <ClCompile Include="..\src\libs\mve\mesh_io_pbrt.cc" />
+    <ClCompile Include="..\src\libs\mve\mesh_io_ply.cc" />
+    <ClCompile Include="..\src\libs\mve\mesh_io_smf.cc" />
+    <ClCompile Include="..\src\libs\mve\mesh_tools.cc" />
+    <ClCompile Include="..\src\libs\mve\scene.cc" />
+    <ClCompile Include="..\src\libs\mve\view.cc" />
+    <ClCompile Include="..\src\libs\mve\volume.cc" />
+    <ClCompile Include="..\src\libs\ogl\camera_2d.cc" />
+    <ClCompile Include="..\src\libs\ogl\camera_trackball.cc" />
+    <ClCompile Include="..\src\libs\ogl\events.cc" />
+    <ClCompile Include="..\src\libs\ogl\mesh_renderer.cc" />
+    <ClCompile Include="..\src\libs\ogl\render_tools.cc" />
+    <ClCompile Include="..\src\libs\ogl\shader_program.cc" />
+    <ClCompile Include="..\src\libs\ogl\texture.cc" />
+    <ClCompile Include="..\src\libs\ogl\vertex_array.cc" />
+    <ClCompile Include="..\src\libs\ogl\vertex_buffer.cc" />
+    <ClCompile Include="..\src\libs\sfm\ba_linear_solver.cc" />
+    <ClCompile Include="..\src\libs\sfm\bundler_common.cc" />
+    <ClCompile Include="..\src\libs\sfm\bundler_features.cc" />
+    <ClCompile Include="..\src\libs\sfm\bundler_incremental.cc" />
+    <ClCompile Include="..\src\libs\sfm\bundler_init_pair.cc" />
+    <ClCompile Include="..\src\libs\sfm\bundler_intrinsics.cc" />
+    <ClCompile Include="..\src\libs\sfm\bundler_matching.cc" />
+    <ClCompile Include="..\src\libs\sfm\bundler_tracks.cc" />
+    <ClCompile Include="..\src\libs\sfm\bundle_adjustment.cc" />
+    <ClCompile Include="..\src\libs\sfm\camera_database.cc" />
+    <ClCompile Include="..\src\libs\sfm\cascade_hashing.cc" />
+    <ClCompile Include="..\src\libs\sfm\exhaustive_matching.cc" />
+    <ClCompile Include="..\src\libs\sfm\extract_focal_length.cc" />
+    <ClCompile Include="..\src\libs\sfm\feature_set.cc" />
+    <ClCompile Include="..\src\libs\sfm\fundamental.cc" />
+    <ClCompile Include="..\src\libs\sfm\homography.cc" />
+    <ClCompile Include="..\src\libs\sfm\matching.cc" />
+    <ClCompile Include="..\src\libs\sfm\nearest_neighbor.cc" />
+    <ClCompile Include="..\src\libs\sfm\pose_p3p.cc" />
+    <ClCompile Include="..\src\libs\sfm\ransac.cc" />
+    <ClCompile Include="..\src\libs\sfm\ransac_fundamental.cc" />
+    <ClCompile Include="..\src\libs\sfm\ransac_homography.cc" />
+    <ClCompile Include="..\src\libs\sfm\ransac_pose_p3p.cc" />
+    <ClCompile Include="..\src\libs\sfm\sift.cc" />
+    <ClCompile Include="..\src\libs\sfm\surf.cc" />
+    <ClCompile Include="..\src\libs\sfm\triangulate.cc" />
+    <ClCompile Include="..\src\libs\sfm\visualizer.cc" />
+    <ClCompile Include="..\src\libs\smvsrecon\bicubic_patch.cc" />
+    <ClCompile Include="..\src\libs\smvsrecon\correspondence.cc" />
+    <ClCompile Include="..\src\libs\smvsrecon\delaunay_2d.cc" />
+    <ClCompile Include="..\src\libs\smvsrecon\depth_optimizer.cc" />
+    <ClCompile Include="..\src\libs\smvsrecon\depth_triangulator.cc" />
+    <ClCompile Include="..\src\libs\smvsrecon\gauss_newton_step.cc" />
+    <ClCompile Include="..\src\libs\smvsrecon\global_lighting.cc" />
+    <ClCompile Include="..\src\libs\smvsrecon\light_optimizer.cc" />
+    <ClCompile Include="..\src\libs\smvsrecon\mesh_generator.cc" />
+    <ClCompile Include="..\src\libs\smvsrecon\mesh_simplifier.cc" />
+    <ClCompile Include="..\src\libs\smvsrecon\sgm_stereo.cc" />
+    <ClCompile Include="..\src\libs\smvsrecon\sse_vector.cc" />
+    <ClCompile Include="..\src\libs\smvsrecon\stereo_view.cc" />
+    <ClCompile Include="..\src\libs\smvsrecon\surface.cc" />
+    <ClCompile Include="..\src\libs\smvsrecon\surface_derivative.cc" />
+    <ClCompile Include="..\src\libs\smvsrecon\surface_patch.cc" />
+    <ClCompile Include="..\src\libs\smvsrecon\view_selection.cc" />
+    <ClCompile Include="..\src\libs\util\arguments.cc" />
+    <ClCompile Include="..\src\libs\util\file_system.cc" />
+    <ClCompile Include="..\src\libs\util\ini_parser.cc" />
+    <ClCompile Include="..\src\libs\util\system.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\libs\mve\bundle_io.h" />
+    <ClInclude Include="..\src\libs\mve\camera.h" />
+    <ClInclude Include="..\src\libs\mve\defines.h" />
+    <ClInclude Include="..\src\libs\mve\depthmap.h" />
+    <ClInclude Include="..\src\libs\mve\image.h" />
+    <ClInclude Include="..\src\libs\mve\image_base.h" />
+    <ClInclude Include="..\src\libs\mve\image_color.h" />
+    <ClInclude Include="..\src\libs\mve\image_drawing.h" />
+    <ClInclude Include="..\src\libs\mve\image_exif.h" />
+    <ClInclude Include="..\src\libs\mve\image_io.h" />
+    <ClInclude Include="..\src\libs\mve\image_tools.h" />
+    <ClInclude Include="..\src\libs\mve\marching_cubes.h" />
+    <ClInclude Include="..\src\libs\mve\marching_tets.h" />
+    <ClInclude Include="..\src\libs\mve\mesh.h" />
+    <ClInclude Include="..\src\libs\mve\mesh_info.h" />
+    <ClInclude Include="..\src\libs\mve\mesh_io.h" />
+    <ClInclude Include="..\src\libs\mve\mesh_io_npts.h" />
+    <ClInclude Include="..\src\libs\mve\mesh_io_obj.h" />
+    <ClInclude Include="..\src\libs\mve\mesh_io_off.h" />
+    <ClInclude Include="..\src\libs\mve\mesh_io_pbrt.h" />
+    <ClInclude Include="..\src\libs\mve\mesh_io_ply.h" />
+    <ClInclude Include="..\src\libs\mve\mesh_io_smf.h" />
+    <ClInclude Include="..\src\libs\mve\mesh_tools.h" />
+    <ClInclude Include="..\src\libs\mve\scene.h" />
+    <ClInclude Include="..\src\libs\mve\view.h" />
+    <ClInclude Include="..\src\libs\mve\volume.h" />
+    <ClInclude Include="..\src\libs\smvsrecon\bicubic_patch.h" />
+    <ClInclude Include="..\src\libs\smvsrecon\block_sparse_matrix.h" />
+    <ClInclude Include="..\src\libs\smvsrecon\conjugate_gradient.h" />
+    <ClInclude Include="..\src\libs\smvsrecon\correspondence.h" />
+    <ClInclude Include="..\src\libs\smvsrecon\defines.h" />
+    <ClInclude Include="..\src\libs\smvsrecon\delaunay_2d.h" />
+    <ClInclude Include="..\src\libs\smvsrecon\depth_optimizer.h" />
+    <ClInclude Include="..\src\libs\smvsrecon\depth_triangulator.h" />
+    <ClInclude Include="..\src\libs\smvsrecon\gauss_newton_step.h" />
+    <ClInclude Include="..\src\libs\smvsrecon\global_lighting.h" />
+    <ClInclude Include="..\src\libs\smvsrecon\ldl_decomposition.h" />
+    <ClInclude Include="..\src\libs\smvsrecon\light_optimizer.h" />
+    <ClInclude Include="..\src\libs\smvsrecon\mesh_generator.h" />
+    <ClInclude Include="..\src\libs\smvsrecon\mesh_simplifier.h" />
+    <ClInclude Include="..\src\libs\smvsrecon\quad_edge.h" />
+    <ClInclude Include="..\src\libs\smvsrecon\sgm_stereo.h" />
+    <ClInclude Include="..\src\libs\smvsrecon\spherical_harmonics.h" />
+    <ClInclude Include="..\src\libs\smvsrecon\sse_vector.h" />
+    <ClInclude Include="..\src\libs\smvsrecon\stereo_view.h" />
+    <ClInclude Include="..\src\libs\smvsrecon\surface.h" />
+    <ClInclude Include="..\src\libs\smvsrecon\surface_derivative.h" />
+    <ClInclude Include="..\src\libs\smvsrecon\surface_patch.h" />
+    <ClInclude Include="..\src\libs\smvsrecon\thread_pool.h" />
+    <ClInclude Include="..\src\libs\smvsrecon\view_selection.h" />
+    <ClInclude Include="..\src\libs\util\aligned_allocator.h" />
+    <ClInclude Include="..\src\libs\util\aligned_memory.h" />
+    <ClInclude Include="..\src\libs\util\arguments.h" />
+    <ClInclude Include="..\src\libs\util\defines.h" />
+    <ClInclude Include="..\src\libs\util\endian.h" />
+    <ClInclude Include="..\src\libs\util\exception.h" />
+    <ClInclude Include="..\src\libs\util\file_system.h" />
+    <ClInclude Include="..\src\libs\util\frame_timer.h" />
+    <ClInclude Include="..\src\libs\util\ini_parser.h" />
+    <ClInclude Include="..\src\libs\util\logging.h" />
+    <ClInclude Include="..\src\libs\util\string.h" />
+    <ClInclude Include="..\src\libs\util\system.h" />
+    <ClInclude Include="..\src\libs\util\timer.h" />
+    <ClInclude Include="..\src\libs\util\tokenizer.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

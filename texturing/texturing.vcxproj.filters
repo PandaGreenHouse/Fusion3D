@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\tex">
+      <UniqueIdentifier>{2379f210-316b-4ac7-ba22-8edcceff3898}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\tex">
+      <UniqueIdentifier>{1ae83b3d-9757-43b0-b393-1e2346d80e2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\mrf">
+      <UniqueIdentifier>{9e9aef74-b1ce-4249-b9c9-a065fb8ade17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\mrf">
+      <UniqueIdentifier>{ea3048ec-af14-4d54-a849-4249973c38d8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="texturing\tex\debug.h">
+      <Filter>Header Files\tex</Filter>
+    </ClInclude>
+    <ClInclude Include="texturing\tex\defines.h">
+      <Filter>Header Files\tex</Filter>
+    </ClInclude>
+    <ClInclude Include="texturing\tex\generate_nnf.h">
+      <Filter>Header Files\tex</Filter>
+    </ClInclude>
+    <ClInclude Include="texturing\tex\histogram.h">
+      <Filter>Header Files\tex</Filter>
+    </ClInclude>
+    <ClInclude Include="texturing\tex\material_lib.h">
+      <Filter>Header Files\tex</Filter>
+    </ClInclude>
+    <ClInclude Include="texturing\tex\obj_model.h">
+      <Filter>Header Files\tex</Filter>
+    </ClInclude>
+    <ClInclude Include="texturing\tex\progress_counter.h">
+      <Filter>Header Files\tex</Filter>
+    </ClInclude>
+    <ClInclude Include="texturing\tex\rectangular_bin.h">
+      <Filter>Header Files\tex</Filter>
+    </ClInclude>
+    <ClInclude Include="texturing\tex\seam_leveling.h">
+      <Filter>Header Files\tex</Filter>
+    </ClInclude>
+    <ClInclude Include="texturing\tex\settings.h">
+      <Filter>Header Files\tex</Filter>
+    </ClInclude>
+    <ClInclude Include="texturing\tex\sparse_table.h">
+      <Filter>Header Files\tex</Filter>
+    </ClInclude>
+    <ClInclude Include="texturing\tex\texture_atlas.h">
+      <Filter>Header Files\tex</Filter>
+    </ClInclude>
+    <ClInclude Include="texturing\tex\texture_patch.h">
+      <Filter>Header Files\tex</Filter>
+    </ClInclude>
+    <ClInclude Include="texturing\tex\texture_view.h">
+      <Filter>Header Files\tex</Filter>
+    </ClInclude>
+    <ClInclude Include="texturing\tex\texturing.h">
+      <Filter>Header Files\tex</Filter>
+    </ClInclude>
+    <ClInclude Include="texturing\tex\timer.h">
+      <Filter>Header Files\tex</Filter>
+    </ClInclude>
+    <ClInclude Include="texturing\tex\tri.h">
+      <Filter>Header Files\tex</Filter>
+    </ClInclude>
+    <ClInclude Include="texturing\tex\uni_graph.h">
+      <Filter>Header Files\tex</Filter>
+    </ClInclude>
+    <ClInclude Include="texturing\tex\util.h">
+      <Filter>Header Files\tex</Filter>
+    </ClInclude>
+    <ClInclude Include="texturing\mrf\gco_graph.h">
+      <Filter>Header Files\mrf</Filter>
+    </ClInclude>
+    <ClInclude Include="texturing\mrf\graph.h">
+      <Filter>Header Files\mrf</Filter>
+    </ClInclude>
+    <ClInclude Include="texturing\mrf\icm_graph.h">
+      <Filter>Header Files\mrf</Filter>
+    </ClInclude>
+    <ClInclude Include="texturing\mrf\lbp_graph.h">
+      <Filter>Header Files\mrf</Filter>
+    </ClInclude>
+    <ClInclude Include="texturing\tex\myRect.h">
+      <Filter>Header Files\tex</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="texturing\tex\build_adjacency_graph.cpp">
+      <Filter>Source Files\tex</Filter>
+    </ClCompile>
+    <ClCompile Include="texturing\tex\build_obj_model.cpp">
+      <Filter>Source Files\tex</Filter>
+    </ClCompile>
+    <ClCompile Include="texturing\tex\calculate_data_costs.cpp">
+      <Filter>Source Files\tex</Filter>
+    </ClCompile>
+    <ClCompile Include="texturing\tex\generate_debug_embeddings.cpp">
+      <Filter>Source Files\tex</Filter>
+    </ClCompile>
+    <ClCompile Include="texturing\tex\generate_texture_atlases.cpp">
+      <Filter>Source Files\tex</Filter>
+    </ClCompile>
+    <ClCompile Include="texturing\tex\generate_texture_patches.cpp">
+      <Filter>Source Files\tex</Filter>
+    </ClCompile>
+    <ClCompile Include="texturing\tex\generate_texture_views.cpp">
+      <Filter>Source Files\tex</Filter>
+    </ClCompile>
+    <ClCompile Include="texturing\tex\global_seam_leveling.cpp">
+      <Filter>Source Files\tex</Filter>
+    </ClCompile>
+    <ClCompile Include="texturing\tex\histogram.cpp">
+      <Filter>Source Files\tex</Filter>
+    </ClCompile>
+    <ClCompile Include="texturing\tex\local_seam_leveling.cpp">
+      <Filter>Source Files\tex</Filter>
+    </ClCompile>
+    <ClCompile Include="texturing\tex\material_lib.cpp">
+      <Filter>Source Files\tex</Filter>
+    </ClCompile>
+    <ClCompile Include="texturing\tex\obj_model.cpp">
+      <Filter>Source Files\tex</Filter>
+    </ClCompile>
+    <ClCompile Include="texturing\tex\partition_mesh.cpp">
+      <Filter>Source Files\tex</Filter>
+    </ClCompile>
+    <ClCompile Include="texturing\tex\poisson_blending.cpp">
+      <Filter>Source Files\tex</Filter>
+    </ClCompile>
+    <ClCompile Include="texturing\tex\prepare_mesh.cpp">
+      <Filter>Source Files\tex</Filter>
+    </ClCompile>
+    <ClCompile Include="texturing\tex\rectangular_bin.cpp">
+      <Filter>Source Files\tex</Filter>
+    </ClCompile>
+    <ClCompile Include="texturing\tex\seam_leveling.cpp">
+      <Filter>Source Files\tex</Filter>
+    </ClCompile>
+    <ClCompile Include="texturing\tex\texture_atlas.cpp">
+      <Filter>Source Files\tex</Filter>
+    </ClCompile>
+    <ClCompile Include="texturing\tex\texture_patch.cpp">
+      <Filter>Source Files\tex</Filter>
+    </ClCompile>
+    <ClCompile Include="texturing\tex\texture_view.cpp">
+      <Filter>Source Files\tex</Filter>
+    </ClCompile>
+    <ClCompile Include="texturing\tex\timer.cpp">
+      <Filter>Source Files\tex</Filter>
+    </ClCompile>
+    <ClCompile Include="texturing\tex\tri.cpp">
+      <Filter>Source Files\tex</Filter>
+    </ClCompile>
+    <ClCompile Include="texturing\tex\uni_graph.cpp">
+      <Filter>Source Files\tex</Filter>
+    </ClCompile>
+    <ClCompile Include="texturing\tex\view_selection.cpp">
+      <Filter>Source Files\tex</Filter>
+    </ClCompile>
+    <ClCompile Include="texturing\mrf\gco_graph.cpp">
+      <Filter>Source Files\mrf</Filter>
+    </ClCompile>
+    <ClCompile Include="texturing\mrf\graph.cpp">
+      <Filter>Source Files\mrf</Filter>
+    </ClCompile>
+    <ClCompile Include="texturing\mrf\icm_graph.cpp">
+      <Filter>Source Files\mrf</Filter>
+    </ClCompile>
+    <ClCompile Include="texturing\mrf\lbp_graph.cpp">
+      <Filter>Source Files\mrf</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
